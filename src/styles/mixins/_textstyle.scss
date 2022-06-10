@@ -22,6 +22,12 @@
   letter-spacing: $letter-spacing-14;
 }
 
+@mixin text-style-15($color: false) {
+  font-size: $font-size-15;
+  line-height: $line-height-15;
+  letter-spacing: $letter-spacing-15;
+}
+
 @mixin text-style-16($color: false) {
   font-size: $font-size-16;
   line-height: $line-height-16;
@@ -34,10 +40,34 @@
   letter-spacing: $letter-spacing-18;
 }
 
+@mixin text-style-20($color: false) {
+  font-size: $font-size-20;
+  line-height: $line-height-20;
+  letter-spacing: $letter-spacing-20;
+}
+
 @mixin text-style-24($color: false) {
   font-size: $font-size-24;
   line-height: $line-height-24;
   letter-spacing: $letter-spacing-24;
+}
+
+@mixin text-style-28($color: false) {
+  font-size: $font-size-28;
+  line-height: $line-height-28;
+  letter-spacing: $letter-spacing-28;
+}
+
+@mixin text-style-30($color: false) {
+  font-size: $font-size-30;
+  line-height: $line-height-30;
+  letter-spacing: $letter-spacing-30;
+}
+
+@mixin text-style-34($color: false) {
+  font-size: $font-size-34;
+  line-height: $line-height-34;
+  letter-spacing: $letter-spacing-34;
 }
 
 @mixin text-style($size, $color: false) {
@@ -53,14 +83,29 @@
   @if ($size == 14) {
     @include text-style-14;
   }
+  @if ($size == 15) {
+    @include text-style-15;
+  }
   @if ($size == 16) {
     @include text-style-16;
   }
   @if ($size == 18) {
     @include text-style-18;
   }
+  @if ($size == 20) {
+    @include text-style-20;
+  }
   @if ($size == 24) {
     @include text-style-24;
+  }
+  @if ($size == 28) {
+    @include text-style-28;
+  }
+  @if ($size == 30) {
+    @include text-style-30;
+  }
+  @if ($size == 34) {
+    @include text-style-34;
   }
 
   @if (type-of($color) == color) {
