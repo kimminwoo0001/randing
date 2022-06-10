@@ -1,0 +1,25 @@
+// constants
+@import "./constants/colors";
+@import "./constants//breakpoint";
+@import "./constants/typography";
+
+// base
+@import "./base/normalize";
+@import "./base/global";
+
+// mixin
+@import "./mixins/flexbox";
+@import "./mixins/position";
+@import "./mixins/responsive";
+@import "./mixins/textstyle";
+
+.container {
+  background-color: blue;
+  @include responsive(T) {
+    background-color: gold;
+  }
+
+  @include responsive(D) {
+    background-color: gainsboro;
+  }
+}
