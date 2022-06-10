@@ -1,0 +1,3 @@
+@mixin pr($num) {
+  padding-right: ($space * $num) px;
+}
