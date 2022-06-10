@@ -12,9 +12,10 @@
 @import "./mixins/position";
 @import "./mixins/responsive";
 @import "./mixins/textstyle";
+@import "./mixins/gradient";
 
 .container {
-  background-color: blue;
+  @include gradient-point();
   @include responsive(T) {
     background-color: gold;
   }

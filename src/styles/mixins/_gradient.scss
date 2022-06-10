@@ -1,0 +1,3 @@
+@mixin gradient-point($방향: to right) {
+  background-image: linear-gradient($방향, #a4f, #a643ff, #a543ff 14%, #6f3cff);
+}
