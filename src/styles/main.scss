@@ -17,24 +17,26 @@
 @import "./mixins/spacing";
 
 // componnet
+@import "./components//common";
 @import "./components/button";
 @import "./components/header";
 
 // layout
 @import "./layouts/_section.scss";
 @import "./layouts/_section1.scss";
+@import "./layouts/_section2.scss";
+@import "./layouts/_section3.scss";
+@import "./layouts/_section4.scss";
+@import "./layouts/_section5.scss";
+@import "./layouts/_section6.scss";
+@import "./layouts/_section7.scss";
+@import "./layouts/_section8.scss";
+@import "./layouts/_section9.scss";
 
 * {
   color: $text;
 }
 
-.container {
-  @include gradient-point();
-  @include responsive(T) {
-    background-color: gold;
-  }
-
-  @include responsive(D) {
-    background-color: gainsboro;
-  }
+body {
+  background-color: $bg;
 }

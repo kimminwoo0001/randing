@@ -1,0 +1,11 @@
+.section__4 {
+  padding: 60px 0;
+  background-image: $gradient-point;
+
+  &__title {
+    h2 {
+      @include text-style(24);
+      text-align: center;
+    }
+  }
+}

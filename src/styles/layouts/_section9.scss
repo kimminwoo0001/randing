@@ -1,0 +1,32 @@
+.section__9 {
+  padding-top: 95px;
+  background-color: #01153d;
+
+  &__title {
+    position: relative;
+    top: 25px;
+    h2 {
+      @include text-style(30);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .text__logo {
+      display: block;
+      width: 129.6px;
+      height: 20.5px;
+      margin: 0 auto;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+
+    img {
+      object-fit: contain;
+      object-position: top center;
+      width: 100%;
+    }
+  }
+}

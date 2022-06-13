@@ -1,5 +1,5 @@
+import Logo from "@components/Logo";
 import React, { useState } from "react";
-import logo from "@assets/teamsnowball/logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,7 @@ const Header = () => {
       {/* 로고 */}
       <div className="header__left">
         <a className="header__logo" href="/">
-          <img src={logo} alt="nunu.gg" />
+          <Logo />
         </a>
       </div>
 

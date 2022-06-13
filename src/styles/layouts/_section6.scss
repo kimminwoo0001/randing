@@ -1,0 +1,49 @@
+.section__6 {
+  background-color: $bg-dark;
+  padding: 100px 0;
+
+  &__title {
+    h2 {
+      @include text-style(48);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 40px;
+
+      span {
+        display: inline-block;
+        line-height: 1;
+
+        &:not(:last-of-type) {
+          margin-bottom: 10px;
+        }
+      }
+
+      .text__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 145.9px;
+        height: 23.1px;
+
+        img {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    img {
+      display: block;
+      width: 45px;
+      height: 45px;
+      &:not(:last-of-type) {
+        margin-right: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.section__2 {
+  height: 566px;
+  background-color: $bg-point;
+  padding-top: 80px;
+
+  &__title {
+    h2 {
+      @include text-style(34);
+      margin-bottom: 24px;
+    }
+
+    p {
+      @include text-style(20);
+    }
+  }
+}
