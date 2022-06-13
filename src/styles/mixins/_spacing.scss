@@ -1,3 +1,63 @@
+// padding
+
 @mixin pr($num) {
-  padding-right: ($space * $num) px;
+  padding-right: ($space * $num);
+}
+
+@mixin pl($num) {
+  padding-left: ($space * $num);
+}
+
+@mixin pt($num) {
+  padding-top: ($space * $num);
+}
+
+@mixin pb($num) {
+  padding-bottom: ($space * $num);
+}
+
+@mixin px($num) {
+  padding-left: ($space * $num);
+  padding-right: ($space * $num);
+}
+
+@mixin py($num) {
+  padding-top: ($space * $num);
+  padding-bottom: ($space * $num);
+}
+
+@mixin p($num) {
+  padding: ($space * $num);
+}
+
+// margin
+
+@mixin mr($num) {
+  margin-right: ($space * $num);
+}
+
+@mixin ml($num) {
+  margin-left: ($space * $num);
+}
+
+@mixin mt($num) {
+  margin-top: ($space * $num);
+}
+
+@mixin mb($num) {
+  margin-bottom: ($space * $num);
+}
+
+@mixin mx($num) {
+  margin-left: ($space * $num);
+  margin-right: ($space * $num);
+}
+
+@mixin my($num) {
+  margin-top: ($space * $num);
+  margin-bottom: ($space * $num);
+}
+
+@mixin m($num) {
+  margin: ($space * $num);
 }

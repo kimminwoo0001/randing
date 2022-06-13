@@ -1,5 +1,6 @@
 // constants
 @import "./constants/colors";
+@import "./constants/space";
 @import "./constants//breakpoint";
 @import "./constants/typography";
 
@@ -13,9 +14,15 @@
 @import "./mixins/responsive";
 @import "./mixins/textstyle";
 @import "./mixins/gradient";
+@import "./mixins/spacing";
 
 // componnet
+@import "./components/button";
 @import "./components/header";
+
+// layout
+@import "./layouts/_section.scss";
+@import "./layouts/_section1.scss";
 
 * {
   color: $text;

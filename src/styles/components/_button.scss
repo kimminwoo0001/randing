@@ -1,0 +1,66 @@
+.btn {
+  @include flexbox;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-gradient {
+  background-image: $gradient-point;
+}
+
+.btn-md {
+  @include px(5);
+  @include py(2.5);
+  @include text-style(12);
+}
+
+.btn-r-20 {
+  border-radius: 20px;
+}
+
+.btn-trigger {
+  padding: 0;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+  &.is-open {
+    span:first-of-type {
+      transform: rotate(45deg);
+    }
+
+    span:nth-of-type(2) {
+      opacity: 0;
+    }
+
+    span:last-of-type {
+      transform: rotate(-45deg);
+    }
+  }
+
+  span {
+    display: block;
+    width: 17px;
+    height: 2px;
+    border-radius: 99px;
+    background-color: $bg-point-400;
+    transition: transform 0.2s ease-in-out;
+    &:not(:last-of-type) {
+      margin-bottom: 4px;
+    }
+
+    &:first-of-type {
+      transform-origin: left center;
+    }
+
+    &:nth-of-type(2) {
+      transition: opacity 0.2s ease-in-out;
+      opacity: 1;
+    }
+
+    &:last-of-type {
+      transform-origin: left center;
+    }
+  }
+}

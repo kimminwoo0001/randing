@@ -42,11 +42,4 @@ const config: GatsbyConfig = {
   ],
 };
 
-// {
-//   resolve: 'gatsby-plugin-google-analytics',
-//   options: {
-//     "trackingId": ""
-//   }
-// }
-
 export default config;

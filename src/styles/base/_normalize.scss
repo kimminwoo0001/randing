@@ -2,6 +2,9 @@
 
 /* Document
    ========================================================================== */
+* {
+  box-sizing: border-box;
+}
 
 /**
  * 1. Correct the line height in all browsers.
@@ -39,7 +42,7 @@ main {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0;
 }
 
 /* Grouping content
@@ -74,6 +77,7 @@ pre {
  */
 
 a {
+  text-decoration: none;
   background-color: transparent;
 }
 
@@ -166,6 +170,8 @@ textarea {
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
+  background: transparent;
+  border: none;
 }
 
 /**

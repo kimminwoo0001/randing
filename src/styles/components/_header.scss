@@ -1,5 +1,41 @@
 .header {
-  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
   height: 60px;
   background-color: $bg;
+
+  @include responsive(T) {
+    background-color: gold;
+  }
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header__button {
+  height: 28px;
+  margin-right: 8px;
+}
+
+.header__trigger {
+  height: 100%;
+  width: 32px;
+}
+
+.header__logo {
+  display: block;
+  width: 109px;
+  height: 60px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
