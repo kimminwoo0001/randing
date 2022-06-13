@@ -1,0 +1,17 @@
+.section__1 {
+  height: 544px;
+  background-color: #040311;
+  @include flexbox;
+
+  &__title {
+    text-align: center;
+    h1 {
+      @include text-style(34);
+      margin-bottom: 30px;
+    }
+
+    p {
+      @include text-style(16);
+    }
+  }
+}
