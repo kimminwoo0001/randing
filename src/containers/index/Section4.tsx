@@ -3,7 +3,7 @@ import React from "react";
 const Section4 = () => {
   return (
     <article className="section section__4">
-      <section className="section__container">
+      <section className="container">
         <div className="section__4__title">
           <h2>
             정확하고 효율적인 인게임 분석,

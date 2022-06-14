@@ -17,12 +17,12 @@
 @import "./mixins/spacing";
 
 // componnet
-@import "./components//common";
+@import "./components/common";
 @import "./components/button";
 @import "./components/header";
+@import "./components/footer";
 
 // layout
-@import "./layouts/_section.scss";
 @import "./layouts/_section1.scss";
 @import "./layouts/_section2.scss";
 @import "./layouts/_section3.scss";

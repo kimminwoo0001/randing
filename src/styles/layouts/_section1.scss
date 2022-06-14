@@ -1,5 +1,6 @@
 .section__1 {
-  height: 544px;
+  height: 90vh;
+  margin-top: 60px;
   background-color: #040311;
   @include flexbox;
 
@@ -8,10 +9,72 @@
     h1 {
       @include text-style(34);
       margin-bottom: 30px;
+
+      @include responsive(T) {
+        @include text-style(60);
+      }
     }
 
     p {
       @include text-style(16);
+
+      @include responsive(T) {
+        @include text-style(28);
+        line-height: 48px;
+      }
+    }
+  }
+
+  &__button {
+    width: 180px;
+    a {
+      display: block;
+      height: 100%;
+    }
+  }
+}
+
+@include responsive(T) {
+  .section__1 {
+    &__title {
+      h1 {
+        @include text-style(60);
+      }
+
+      p {
+        @include text-style(28);
+        line-height: 48px;
+      }
+    }
+  }
+}
+
+@include responsive(D) {
+  .section__1 {
+    margin-top: 80px;
+    &__title {
+      margin-bottom: 80px;
+      h1 {
+        font-size: 66px;
+        list-style: 80px;
+        margin-bottom: 40px;
+      }
+
+      p {
+        @include text-style(32);
+      }
+    }
+
+    &__button {
+      width: 180px;
+      height: 60px;
+      border-radius: 60px;
+      margin: 0 auto;
+      a {
+        @include flexbox;
+        @include text-style(15);
+        height: 100%;
+      }
     }
   }
 }

@@ -3,7 +3,7 @@ import React from "react";
 const Section5 = () => {
   return (
     <article className="section section__5">
-      <section className="section__container">
+      <section className="container">
         <div className="section__5__title">
           <h2>정글 동선 분석</h2>
           <h2 className="underline">와드+동선 분석</h2>

@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 const Section6 = () => {
   return (
     <article className="section section__6">
-      <section className="section__container">
+      <section className="container">
         <div className="section__6__title">
           <h2>
             <span>여러팀들이 이미</span>

@@ -3,7 +3,7 @@ import React from "react";
 const Section2 = () => {
   return (
     <article className="section section__2">
-      <section className="section__container">
+      <section className="container">
         <div className="section__2__title">
           <h2>Vision AI</h2>
           <p>

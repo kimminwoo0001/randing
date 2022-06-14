@@ -10,10 +10,6 @@
       text-align: center;
       margin-bottom: 22px;
     }
-
-    p {
-      @include text-style(20);
-    }
   }
 }
 
@@ -30,7 +26,8 @@
 
 .section__3__subtitle {
   &__label {
-    @include text-style(15);
+    @include text-style(16);
+    font-weight: bold;
     display: flex;
     align-items: center;
     color: $text-point;
@@ -40,7 +37,6 @@
   .icon {
     width: 16px;
     height: 16px;
-    background-color: red;
     margin-right: 8px;
 
     img {
@@ -52,9 +48,7 @@
 
   h3 {
     @include text-style(20);
-    // font-size: 5.5vw;
-    // line-height: 8vw;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   &__img {
@@ -81,6 +75,140 @@
     &.img4 {
       padding-top: 77.85%;
       background-image: url("/images/section3/img4.png");
+    }
+  }
+}
+
+@include responsive(T) {
+  .section__3 {
+    padding-bottom: 0;
+    margin-bottom: -60px;
+    &__title {
+      position: relative;
+      top: -340px;
+
+      h2 {
+        @include text-style(40);
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .section__3__subtitle {
+    position: relative;
+    top: -140px;
+    &__label {
+      @include text-style(20);
+      margin-bottom: 20px;
+    }
+
+    .icon {
+      width: 25px;
+      height: 25px;
+    }
+
+    h3 {
+      @include text-style(28);
+      line-height: 46px;
+    }
+
+    &__img {
+      margin-bottom: 180px;
+      margin: 0 auto;
+
+      &.img1 {
+        width: 420px;
+      }
+
+      &.img2 {
+        width: 457px;
+      }
+
+      &.img3 {
+        width: 450px;
+      }
+
+      &.img4 {
+        width: 450px;
+      }
+    }
+  }
+}
+
+@include responsive(D) {
+  .section__3 {
+    padding-bottom: 0;
+    margin-bottom: -60px;
+
+    &__title {
+      position: relative;
+      top: -440px;
+    }
+  }
+
+  .section__3__img {
+    width: 1013px;
+    height: 591px;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+
+  .section__3__subtitle {
+    position: relative;
+    top: -240px;
+    display: flex;
+    margin-bottom: 120px;
+
+    &:nth-of-type(2n) {
+      flex-direction: row-reverse;
+    }
+
+    &__label {
+      @include text-style(20);
+      margin-bottom: 20px;
+    }
+
+    .icon {
+      width: 25px;
+      height: 25px;
+    }
+
+    h3 {
+      @include text-style(34);
+      line-height: 58px;
+    }
+
+    &__text {
+      padding: 40px 60px;
+      flex: 1;
+    }
+
+    &__img {
+      padding: 40px 60px;
+      flex: 1;
+      margin-bottom: 0;
+      background-position: center center;
+
+      &.img1 {
+        background-size: 340px;
+        padding-top: 0;
+      }
+
+      &.img2 {
+        background-size: 447px;
+        padding-top: 0;
+      }
+
+      &.img3 {
+        background-size: 414px;
+        padding-top: 0;
+      }
+
+      &.img4 {
+        background-size: 408px;
+        padding-top: 0;
+      }
     }
   }
 }

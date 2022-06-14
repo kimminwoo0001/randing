@@ -9,30 +9,46 @@ const Header = () => {
   const onOpen = () => setIsOpen(true);
   return (
     <header className="header">
-      {/* 로고 */}
-      <div className="header__left">
-        <a className="header__logo" href="/">
-          <Logo />
-        </a>
-      </div>
+      <div className="container">
+        {/* 로고 */}
+        <div className="header__left">
+          <a className="header__logo" href="/">
+            <Logo />
+          </a>
+        </div>
 
-      {/* 오른쪽 */}
-      <div className="header__right">
-        <a
-          className="btn btn-gradient btn-md btn-r-20 header__button"
-          href="#none"
-        >
-          도입문의
-        </a>
-        <div className="header__trigger">
-          <button
-            className={`btn btn-trigger ${isOpen ? "is-open" : ""}`}
-            onClick={onToggle}
+        {/* 오른쪽 */}
+        <div className="header__right">
+          <a className="header__login lg-only" href="">
+            로그인
+          </a>
+          <a
+            className="btn btn-gradient btn-md btn-r-20 header__button"
+            href="#none"
           >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+            도입문의
+          </a>
+          <div className="header__trigger lg-hidden">
+            <button
+              className={`btn btn-trigger ${isOpen ? "is-open" : ""}`}
+              onClick={onToggle}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+
+          <div className="header__language lg-only">
+            <ul className="header__language__list">
+              <li className="header__language__list__item">
+                <a href="">한국어</a>
+              </li>
+              <li className="header__language__list__item">
+                <a href="">ENG</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>

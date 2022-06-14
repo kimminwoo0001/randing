@@ -43,3 +43,46 @@
     padding-top: 74.62%;
   }
 }
+
+@include responsive(T) {
+  .section__5 {
+    padding: 220px 0 270px 0;
+
+    &__title {
+      h2 {
+        @include text-style(24);
+
+        &:not(:last-of-type) {
+          margin-right: 40px;
+        }
+
+        &.underline {
+          &::before {
+            height: 0.6em;
+          }
+        }
+      }
+    }
+
+    p {
+      @include text-style(24);
+      line-height: 44px;
+      margin-bottom: 96px;
+    }
+  }
+}
+
+@include responsive(D) {
+  .section__5 {
+    p {
+      margin-bottom: 80px;
+    }
+
+    &__img {
+      width: 900px;
+      height: 690px;
+      margin: 0 auto;
+      padding-top: 0;
+    }
+  }
+}

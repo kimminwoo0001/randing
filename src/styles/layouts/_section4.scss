@@ -9,3 +9,27 @@
     }
   }
 }
+
+@include responsive(T) {
+  .section__4 {
+    padding: 175px 0;
+
+    &__title {
+      h2 {
+        @include text-style(40);
+      }
+    }
+  }
+}
+
+@include responsive(D) {
+  .section__4 {
+    padding: 155px 0;
+
+    &__title {
+      h2 {
+        @include text-style(40);
+      }
+    }
+  }
+}

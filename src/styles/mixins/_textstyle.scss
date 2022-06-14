@@ -64,10 +64,34 @@
   letter-spacing: $letter-spacing-30;
 }
 
+@mixin text-style-32($color: false) {
+  font-size: $font-size-32;
+  line-height: $line-height-32;
+  letter-spacing: $letter-spacing-32;
+}
+
 @mixin text-style-34($color: false) {
   font-size: $font-size-34;
   line-height: $line-height-34;
   letter-spacing: $letter-spacing-34;
+}
+
+@mixin text-style-40($color: false) {
+  font-size: $font-size-40;
+  line-height: $line-height-40;
+  letter-spacing: $letter-spacing-40;
+}
+
+@mixin text-style-50($color: false) {
+  font-size: $font-size-50;
+  line-height: $line-height-50;
+  letter-spacing: $letter-spacing-50;
+}
+
+@mixin text-style-60($color: false) {
+  font-size: $font-size-60;
+  line-height: $line-height-60;
+  letter-spacing: $letter-spacing-60;
 }
 
 @mixin text-style($size, $color: false) {
@@ -104,8 +128,25 @@
   @if ($size == 30) {
     @include text-style-30;
   }
+
+  @if ($size == 32) {
+    @include text-style-32;
+  }
+
   @if ($size == 34) {
     @include text-style-34;
+  }
+
+  @if ($size == 40) {
+    @include text-style-40;
+  }
+
+  @if ($size == 50) {
+    @include text-style-50;
+  }
+
+  @if ($size == 60) {
+    @include text-style-60;
   }
 
   @if (type-of($color) == color) {

@@ -1,3 +1,4 @@
+import Footer from "@components/Footer/Footer";
 import Header from "@components/Header/Header";
 import Section1 from "@containers/index/section1";
 import Section2 from "@containers/index/Section2";
@@ -27,6 +28,7 @@ const IndexPage = () => {
       <Section7 />
       <Section8 />
       <Section9 />
+      <Footer />
     </main>
   );
 };

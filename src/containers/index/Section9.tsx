@@ -6,7 +6,7 @@ import { withPrefix } from "gatsby";
 const Section9 = () => {
   return (
     <article className="section section__9">
-      <section className="section__container">
+      <section className="container">
         <div className="section__9__title">
           <h2>
             전략 수립과
@@ -20,15 +20,7 @@ const Section9 = () => {
           </span>
         </div>
       </section>
-      <div
-        className="section__9__img"
-        style={{
-          backgroundImage: `url(${withPrefix("/images/bg/img_end.png")})`,
-          paddingTop: `112%`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "contain",
-        }}
-      ></div>
+      <div className="section__9__img"></div>
     </article>
   );
 };

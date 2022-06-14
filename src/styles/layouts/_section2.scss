@@ -6,11 +6,36 @@
   &__title {
     h2 {
       @include text-style(34);
+      font-weight: bold;
       margin-bottom: 24px;
     }
 
     p {
       @include text-style(20);
     }
+  }
+}
+
+@include responsive(T) {
+  .section__2 {
+    padding-top: 140px;
+    height: 1030px;
+
+    &__title {
+      h2 {
+        @include text-style(50);
+        margin-bottom: 44px;
+      }
+
+      p {
+        @include text-style(32);
+      }
+    }
+  }
+}
+
+@include responsive(D) {
+  .section__2 {
+    padding-top: 188px;
   }
 }
