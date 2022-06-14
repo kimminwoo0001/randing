@@ -1,6 +1,7 @@
 import Logo from "@components/Logo";
 import React from "react";
-import bg from "@assets/bg/img_end.png";
+import { StaticImage } from "gatsby-plugin-image";
+import { withPrefix } from "gatsby";
 
 const Section9 = () => {
   return (
@@ -19,9 +20,15 @@ const Section9 = () => {
           </span>
         </div>
       </section>
-      <div className="section__9__img">
-        <img src={bg} alt="bg" />
-      </div>
+      <div
+        className="section__9__img"
+        style={{
+          backgroundImage: `url(${withPrefix("/images/bg/img_end.png")})`,
+          paddingTop: `112%`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "contain",
+        }}
+      ></div>
     </article>
   );
 };

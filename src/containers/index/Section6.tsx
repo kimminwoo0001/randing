@@ -1,10 +1,6 @@
 import Logo from "@components/Logo";
 import React from "react";
-import T100 from "@assets/logo/team_100.png";
-import T1 from "@assets/logo/team_t1.png";
-import NS from "@assets/logo/team_ns.png";
-import AZYT from "@assets/logo/azyt.png";
-import KESPA from "@assets/logo/kespa.png";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Section6 = () => {
   return (
@@ -23,11 +19,11 @@ const Section6 = () => {
         </div>
 
         <div className="section__6__img">
-          <img src={T100} alt="100" />
-          <img src={T1} alt="t1" />
-          <img src={NS} alt="ns" />
-          <img src={AZYT} alt="azyt" />
-          <img src={KESPA} alt="kespa" />
+          <img src="/images/logo/team_100.png" alt="100" />
+          <img src="/images/logo/team_t1.png" alt="t1" />
+          <img src="/images/logo/team_ns.png" alt="ns" />
+          <img src="/images/logo/azyt.png" alt="azyt" />
+          <img src="/images/logo/kespa.png" alt="kespa" />
         </div>
       </section>
     </article>
