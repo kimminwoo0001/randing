@@ -30,8 +30,6 @@
 
 @include responsive(T) {
   .section__9 {
-    padding-top: 200px;
-
     &__title {
       h2 {
         @include text-style(60);
@@ -51,8 +49,14 @@
 @include responsive(T) {
   .section__9 {
     padding-top: 200px;
-
     &__title {
+      position: relative;
+
+      h2 {
+        line-height: 80px;
+        margin-bottom: 40px;
+      }
+
       .text__logo {
         width: 366px;
       }
