@@ -51,6 +51,24 @@ const Header = () => {
           </div>
         </div>
       </div>
+
+      <div className={`header__expand lg-hidden ${isOpen ? "is-active" : ""}`}>
+        <div className="container">
+          <ul className="header__expand__list">
+            <li className="header__expand__list__item">
+              <a href="">로그인</a>
+            </li>
+            <li className="header__expand__list__item">
+              <a className="header__expand__list__item__language" href="#">
+                한국어
+              </a>
+              <a className="header__expand__list__item__language" href="#">
+                ENG
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
   );
 };

@@ -83,7 +83,7 @@
 
 @include responsive(D) {
   .section__7 {
-    padding: 178px 0 160px 0;
+    padding: 178px 0 200px 0;
 
     &__img {
       display: block;
@@ -104,7 +104,7 @@
         width: 1200px;
         height: 676px;
         padding-top: 0;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
       }
     }
 
@@ -118,7 +118,7 @@
         }
       }
 
-      margin-bottom: 330px;
+      margin-bottom: 200px;
     }
   }
 
@@ -127,7 +127,7 @@
     > div {
       flex: 1;
       &:first-of-type {
-        padding-right: 20px;
+        padding-right: 40px;
       }
     }
   }
