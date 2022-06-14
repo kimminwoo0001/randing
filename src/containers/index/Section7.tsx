@@ -9,9 +9,7 @@ const Section7 = () => {
         </div>
       </section>
 
-      <div className="section__7__img img1">
-        <img src="" alt="" />
-      </div>
+      <div className="section__7__img img1"></div>
 
       <section className="section__container">
         <div className="section__7__desc">
@@ -35,9 +33,7 @@ const Section7 = () => {
         </div>
       </section>
 
-      <div className="section__7__img img2">
-        <img src="" alt="" />
-      </div>
+      <div className="section__7__img img2"></div>
 
       <section className="section__container">
         <div className="section__7__desc mb-0">

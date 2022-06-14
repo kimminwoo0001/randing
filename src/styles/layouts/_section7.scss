@@ -10,15 +10,19 @@
 
   &__img {
     display: block;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+
     &.img1 {
-      background-color: gold;
-      height: 367px;
+      background-image: url("/images/section7/img1.png");
+      padding-top: 101.94%;
       margin-bottom: 92px;
     }
 
     &.img2 {
-      background-color: gold;
-      height: 203px;
+      background-image: url("/images/section7/img2.png");
+      padding-top: 56.38%;
       margin-bottom: 36px;
     }
   }

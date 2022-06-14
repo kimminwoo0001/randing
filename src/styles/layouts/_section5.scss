@@ -36,7 +36,10 @@
   }
 
   &__img {
-    background-color: red;
-    height: 220px;
+    background-image: url("/images/section5/video.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top: 74.62%;
   }
 }

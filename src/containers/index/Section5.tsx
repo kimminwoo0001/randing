@@ -16,9 +16,7 @@ const Section5 = () => {
           하세요.
         </p>
 
-        <div className="section__5__img">
-          <img src="" alt="" />
-        </div>
+        <div className="section__5__img"></div>
       </section>
     </article>
   );

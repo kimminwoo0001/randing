@@ -15,16 +15,17 @@
       @include text-style(20);
     }
   }
-
-  &__img {
-    height: 187px;
-    background-color: gold;
-  }
 }
 
-.secction__3__img {
-  height: 200px;
-  background-color: gold;
+.section__3__img {
+  position: relative;
+  padding-top: 58.34%;
+  margin: 0 -20px;
+
+  background-image: url("/images/macbook.svg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .section__3__subtitle {
@@ -51,12 +52,35 @@
 
   h3 {
     @include text-style(20);
+    // font-size: 5.5vw;
+    // line-height: 8vw;
     margin-bottom: 30px;
   }
 
   &__img {
-    background-color: red;
-    min-height: 230px;
     margin-bottom: 100px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+
+    &.img1 {
+      padding-top: 82.32%;
+      background-image: url("/images/section3/img1.png");
+    }
+
+    &.img2 {
+      padding-top: 59.85%;
+      background-image: url("/images/section3/img2.png");
+    }
+
+    &.img3 {
+      padding-top: 72.5%;
+      background-image: url("/images/section3/img3.png");
+    }
+
+    &.img4 {
+      padding-top: 77.85%;
+      background-image: url("/images/section3/img4.png");
+    }
   }
 }

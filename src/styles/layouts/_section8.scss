@@ -22,9 +22,18 @@
         margin-bottom: 104px;
       }
       &__img {
-        height: 186px;
-        background-color: gold;
+        padding-top: 66.67%;
         margin-bottom: 43px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+
+        &.img1 {
+          background-image: url("/images/section8/img_data.png");
+        }
+        &.img2 {
+          background-image: url("/images/section8/img_game.png");
+        }
       }
 
       &__text {

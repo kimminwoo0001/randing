@@ -21,7 +21,7 @@ const Section8 = () => {
 
         <div className="about__container">
           <div className="about">
-            <div className="about__img">
+            <div className="about__img img1">
               <img src="" alt="" />
             </div>
 
@@ -37,7 +37,7 @@ const Section8 = () => {
           </div>
 
           <div className="about">
-            <div className="about__img">
+            <div className="about__img img2">
               <img src="" alt="" />
             </div>
 

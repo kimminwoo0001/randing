@@ -1,3 +1,4 @@
+import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 
 const Section3 = () => {
@@ -10,13 +11,13 @@ const Section3 = () => {
             <br />
             챔피언의 와드&동선 데이터
           </h2>
-          <div className="secction__3__img">
-            <img src="" alt="" />
+          <div className="section__3__img">
+            <div className="section__3__img__inner"></div>
           </div>
         </div>
 
         {/* 갱킹 로밍 지표 */}
-        <section className="section__3__subtitle subtitle1">
+        <section className="section__3__subtitle">
           <span className="section__3__subtitle__label">
             <img className="icon" src="" alt="" />
             갱킹/로밍 지표
@@ -31,13 +32,11 @@ const Section3 = () => {
             정글동선
             <br />
           </h3>
-          <div className="section__3__subtitle__img">
-            <img src="" alt="이미지" />
-          </div>
+          <div className="section__3__subtitle__img img1"></div>
         </section>
 
         {/* 교전 지표 */}
-        <section className="section__3__subtitle subtitle2">
+        <section className="section__3__subtitle ">
           <span className="section__3__subtitle__label">
             <img className="icon" src="" alt="" />
             교전 지표
@@ -52,13 +51,11 @@ const Section3 = () => {
             오브젝트별 교전
             <br />
           </h3>
-          <div className="section__3__subtitle__img">
-            <img src="" alt="이미지" />
-          </div>
+          <div className="section__3__subtitle__img img2"></div>
         </section>
 
         {/* 라인전 지표 */}
-        <section className="section__3__subtitle subtitle3">
+        <section className="section__3__subtitle">
           <span className="section__3__subtitle__label">
             <img className="icon" src="" alt="" />
             라인전 지표
@@ -73,13 +70,11 @@ const Section3 = () => {
             상대 정글 침입 시간
             <br />
           </h3>
-          <div className="section__3__subtitle__img">
-            <img src="" alt="이미지" />
-          </div>
+          <div className="section__3__subtitle__img img3"></div>
         </section>
 
         {/* 교전 지표 */}
-        <section className="section__3__subtitle subtitle4">
+        <section className="section__3__subtitle">
           <span className="section__3__subtitle__label">
             <img className="icon" src="" alt="" />
             교전 지표
@@ -94,9 +89,7 @@ const Section3 = () => {
             와드 설치 패턴
             <br />
           </h3>
-          <div className="section__3__subtitle__img">
-            <img src="" alt="이미지" />
-          </div>
+          <div className="section__3__subtitle__img img4"></div>
         </section>
       </section>
     </article>
