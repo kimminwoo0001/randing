@@ -6,9 +6,7 @@ const Section8 = () => {
       <section className="container">
         <div className="section__8__title">
           <h2>
-            세계 최고의
-            <br />
-            리그오브레전드
+            세계 최고의 리그오브레전드
             <br />
             게임데이터 분석팀
           </h2>
@@ -22,7 +20,10 @@ const Section8 = () => {
         <div className="about__container">
           <div className="about">
             <div className="about__img img1">
-              <img src="" alt="" />
+              <img
+                src="/images/section8/img_data.png"
+                alt="데이터 사이언스팀"
+              />
             </div>
 
             <div className="about__text">
@@ -38,7 +39,10 @@ const Section8 = () => {
 
           <div className="about">
             <div className="about__img img2">
-              <img src="" alt="" />
+              <img
+                src="/images/section8/img_game.png"
+                alt="데이터 사이언스팀"
+              />
             </div>
 
             <div className="about__text">

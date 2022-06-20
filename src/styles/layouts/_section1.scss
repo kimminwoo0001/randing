@@ -8,20 +8,11 @@
     text-align: center;
     h1 {
       @include text-style(34);
-      margin-bottom: 30px;
-
-      @include responsive(T) {
-        @include text-style(60);
-      }
+      margin-bottom: 20px;
     }
 
     p {
       @include text-style(16);
-
-      @include responsive(T) {
-        @include text-style(28);
-        line-height: 48px;
-      }
     }
   }
 
@@ -53,7 +44,9 @@
   .section__1 {
     margin-top: 80px;
     &__title {
+      margin: 0 auto;
       margin-bottom: 80px;
+      width: 740px;
       h1 {
         font-size: 66px;
         list-style: 80px;

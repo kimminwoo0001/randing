@@ -122,6 +122,9 @@
 }
 
 @include responsive(T) {
+  .header {
+    height: 80px;
+  }
 }
 
 @include responsive(D) {

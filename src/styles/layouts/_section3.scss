@@ -1,10 +1,11 @@
 .section__3 {
   background-color: $bg;
-  padding-bottom: 70px;
+  padding-bottom: 40px;
 
   &__title {
     position: relative;
     top: -180px;
+    margin-bottom: -100px;
     h2 {
       @include text-style(24);
       text-align: center;
@@ -14,14 +15,9 @@
 }
 
 .section__3__img {
-  position: relative;
-  padding-top: 58.34%;
-  margin: 0 -20px;
-
-  background-image: url("/images/macbook.svg");
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: contain;
+  img {
+    width: 100%;
+  }
 }
 
 .section__3__subtitle {
@@ -115,18 +111,19 @@
 
     &__img {
       margin-bottom: 180px;
-      margin: 0 auto;
+      margin: 0;
+      margin-right: auto;
 
       &.img1 {
-        width: 420px;
+        width: 426px;
       }
 
       &.img2 {
-        width: 457px;
+        width: 586px;
       }
 
       &.img3 {
-        width: 450px;
+        width: 483px;
       }
 
       &.img4 {

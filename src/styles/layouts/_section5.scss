@@ -1,8 +1,8 @@
 .section__5 {
-  padding: 170px 0;
+  padding: 100px 0;
   &__title {
     display: flex;
-    margin-bottom: 48px;
+    margin-bottom: 20px;
 
     h2 {
       @include text-style(20);
@@ -17,11 +17,11 @@
           content: "";
           position: absolute;
           left: 50%;
-          top: 0.8em;
+          top: 0.75em;
 
           display: block;
-          width: calc(100% + 20px);
-          height: 1em;
+          width: calc(100% + 10px);
+          height: 0.75em;
           transform: translateX(-50%);
           z-index: -1;
           background-image: $gradient-point;
@@ -32,25 +32,24 @@
 
   p {
     @include text-style(15);
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   &__img {
-    background-image: url("/images/section5/video.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left top;
-    padding-top: 74.62%;
+    padding: 0 24px;
+    img {
+      width: 100%;
+    }
   }
 }
 
 @include responsive(T) {
   .section__5 {
-    padding: 220px 0 270px 0;
+    padding: 200px 0;
 
     &__title {
       h2 {
-        @include text-style(24);
+        @include text-style(28);
 
         &:not(:last-of-type) {
           margin-right: 40px;
@@ -62,12 +61,20 @@
           }
         }
       }
+      margin-bottom: 30px;
     }
 
     p {
       @include text-style(24);
-      line-height: 44px;
-      margin-bottom: 96px;
+      line-height: 40px;
+      margin-bottom: 40px;
+    }
+
+    &__img {
+      padding: 0 24px;
+      img {
+        width: 100%;
+      }
     }
   }
 }
@@ -79,8 +86,8 @@
     }
 
     &__img {
-      width: 900px;
-      height: 690px;
+      width: 830px;
+      height: 620px;
       margin: 0 auto;
       padding-top: 0;
     }

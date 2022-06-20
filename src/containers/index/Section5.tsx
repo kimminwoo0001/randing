@@ -1,4 +1,5 @@
 import React from "react";
+import sectionImg from "@assets/section5/video.png";
 
 const Section5 = () => {
   return (
@@ -16,7 +17,9 @@ const Section5 = () => {
           하세요.
         </p>
 
-        <div className="section__5__img"></div>
+        <div className="section__5__img">
+          <img src={sectionImg} alt="정글동선분석&와드동선분석" />
+        </div>
       </section>
     </article>
   );

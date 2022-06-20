@@ -1,5 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import macbook from "@assets/macbook.svg";
 
 const Section3 = () => {
   return (
@@ -12,7 +13,7 @@ const Section3 = () => {
             챔피언의 와드&동선 데이터
           </h2>
           <div className="section__3__img">
-            <div className="section__3__img__inner"></div>
+            <img src={macbook} alt="" />
           </div>
         </div>
 
