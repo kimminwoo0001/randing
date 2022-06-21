@@ -1,3 +1,4 @@
+import { graphql } from "gatsby";
 import Footer from "@components/Footer/Footer";
 import Header from "@components/Header/Header";
 import Section1 from "@containers/index/section1";
@@ -10,6 +11,7 @@ import Section7 from "@containers/index/Section7";
 import Section8 from "@containers/index/Section8";
 import Section9 from "@containers/index/Section9";
 import "@styles/main.scss";
+
 import * as React from "react";
 
 // styles
@@ -34,3 +36,17 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

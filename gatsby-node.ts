@@ -1,5 +1,5 @@
 const path = require("path");
-
+const fs = require("fs-extra");
 // Setup Import Alias
 exports.onCreateWebpackConfig = ({ getConfig, actions }: any) => {
   const output = getConfig().output || {};

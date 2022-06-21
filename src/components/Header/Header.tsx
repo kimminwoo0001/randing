@@ -1,8 +1,10 @@
 import Logo from "@components/Logo";
+import { Link, useI18next } from "gatsby-plugin-react-i18next";
 import React, { useState } from "react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { languages, originalPath } = useI18next();
 
   const onClose = () => setIsOpen(false);
   const onToggle = () => setIsOpen(!isOpen);
@@ -42,10 +44,14 @@ const Header = () => {
           <div className="header__language lg-only">
             <ul className="header__language__list">
               <li className="header__language__list__item">
-                <a href="">한국어</a>
+                <Link to={originalPath} language={"ko"}>
+                  한국어
+                </Link>
               </li>
               <li className="header__language__list__item">
-                <a href="">ENG</a>
+                <Link to={originalPath} language={"en"}>
+                  ENG
+                </Link>
               </li>
             </ul>
           </div>
@@ -59,12 +65,21 @@ const Header = () => {
               <a href="">로그인</a>
             </li>
             <li className="header__expand__list__item">
-              <a className="header__expand__list__item__language" href="#">
+              <Link
+                className="header__expand__list__item__language"
+                to={originalPath}
+                language={"ko"}
+              >
                 한국어
-              </a>
-              <a className="header__expand__list__item__language" href="#">
+              </Link>
+
+              <Link
+                className="header__expand__list__item__language"
+                to={originalPath}
+                language={"en"}
+              >
                 ENG
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

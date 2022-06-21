@@ -1,6 +1,10 @@
+import { graphql } from "gatsby";
 import React from "react";
+import { Trans, useTranslation, withTranslation } from "react-i18next";
 
-const Section1 = () => {
+const Section1 = (props: any) => {
+  const { t } = useTranslation();
+
   return (
     <article className="section section__1">
       <section className="container">
@@ -10,6 +14,7 @@ const Section1 = () => {
             <br />
             굴리세요
           </h1>
+
           <p>
             정확한 데이터를 이용해 승리하는 전략을 수립하고 좋은 선수를 데이터에
             기반해 영입하세요.

@@ -1,4 +1,4 @@
-import type { GatsbyConfig } from "gatsby";
+import { GatsbyConfig, graphql } from "gatsby";
 
 const config: GatsbyConfig = {
   pathPrefix: "/randing",
@@ -39,6 +39,36 @@ const config: GatsbyConfig = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/locales/`,
+        name: `locale`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
+        languages: [`en`, `ko`],
+        defaultLanguage: `ko`,
+        siteUrl: "http://localhost:8000/",
+        // you can pass any i18next options
+        i18nextOptions: {
+          interpolation: {
+            escapeValue: false, // not needed for react as it escapes by default
+          },
+          keySeparator: false,
+          nsSeparator: false,
+        },
+        pages: [
+          {
+            matchPath: "/:lang?/index",
+            getLanguageFromPath: true,
+          },
+        ],
+      },
     },
   ],
 };
